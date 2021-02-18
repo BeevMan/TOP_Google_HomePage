@@ -76,21 +76,20 @@ a:hover {
     text-decoration: underline;
 }
 
+#footer-ul {
+    display: flex;
+    align-items: center;
+}
+
 #left-footer {
-    float: left;
+    margin-right: auto;
 }
 
 #left-footer li {
     padding-left: 1.7em;
 }
 
-#right-footer, #left-footer{
-    display:inline-block;
-    text-align: center;
-}
-
 #right-footer {
-    float: right;
     margin-right: 2em;
 }
 
@@ -129,11 +128,6 @@ a:hover {
 
 }
 
-
-#srch {
-    ;
-}
-
 #buttons {
     padding-top: 18px;
 }
@@ -148,24 +142,65 @@ a:hover {
     margin: 11px 4px;
     padding: 0 16px;
     line-height: 27px;
+    font-size: 14px;
     height: 36px;
     min-width: 54px;
     text-align: center;
 }
 
-#voice-search {
-    background: url('//web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png') 0 0 no-repeat;
-}
-
-#magnify-glass-icon {
-    height: 20px;
-    width: 20px;
-}
-
 svg {
-    display: block;
+    width: 20px;
+    height: 20px;
+    color: #9AA0A6;
+
+}
+
+path {
+    width: 14.5px;
+    height: 14.5px;
 }
 
 #searchbar {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 582px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+}
+
+#magnify-glass-icon {
+    color: #9AA0A6;
+    width: 20px;
+    height: 26px;
+    margin: 9px 0px;
+    padding-right: 13px;
+    padding-left: 14px;
+    fill: currentColor;
+
+}
+
+#srch {
+    display: flex;
+    flex: 100%;
+    border-style: none;
+    font-size: 16px;
+    line-height: 34px;
+    height: 34px;
+    outline-style: none;
+}
+
+#voice-search {
+    width: 24px;
+    height: 24px;
+    padding: 0px;
+    margin: 0px 16px 0px 8px;
+    border: 0px;
+    display: flex;
+    vertical-align: middle;
+    background: url('//web.archive.org/web/20191130234759im_/https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png') 0 0 no-repeat;
+    background-size: 24px;
 }
